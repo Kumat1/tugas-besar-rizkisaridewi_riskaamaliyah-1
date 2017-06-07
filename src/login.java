@@ -48,19 +48,30 @@ public class login extends JFrame implements ActionListener{
 		username.setBounds(167, 71, 166, 32);
 		contentPane.add(username);
 		username.setColumns(10);
+<<<<<<< HEAD
 
 		user = new JLabel("Username");
 		user.setForeground(Color.BLACK);
 		user.setFont(new Font("login", Font.BOLD, 15));
 		user.setBounds(72, 78, 85, 14);
 		contentPane.add(user);
+=======
+>>>>>>> a9dd526da66ed888239cb7cbc2afcb3c9081d418
 		
 		password = new JPasswordField();
 		password.setFont(new Font("Masuk", Font.PLAIN, 14));
 		password.setBounds(167, 125, 170, 32);
 		contentPane.add(password);
 		
+<<<<<<< HEAD
 
+=======
+		user = new JLabel("Username");
+		user.setForeground(Color.BLACK);
+		user.setFont(new Font("login", Font.BOLD, 15));
+		user.setBounds(72, 78, 85, 14);
+		contentPane.add(user);
+>>>>>>> a9dd526da66ed888239cb7cbc2afcb3c9081d418
 		
 		pass = new JLabel("Password");
 		pass.setForeground(Color.BLACK);
