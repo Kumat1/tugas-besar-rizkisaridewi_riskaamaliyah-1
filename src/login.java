@@ -1,5 +1,5 @@
 /**
- * Created by Riska Amaliyah on 22/05/2017.
+ *
  */
 
 import javax.swing.*;
@@ -34,7 +34,9 @@ public class login extends JFrame implements ActionListener{
 		contentPane.setLayout(null);
 		
 		btnBack = new JButton("Back");
+
 		btnBack.setBackground(Color.ORANGE);
+
 		btnBack.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				dispose();
@@ -49,17 +51,29 @@ public class login extends JFrame implements ActionListener{
 		username.setBounds(167, 71, 166, 32);
 		contentPane.add(username);
 		username.setColumns(10);
+
+
+		user = new JLabel("Username");
+		user.setForeground(Color.BLACK);
+		user.setFont(new Font("login", Font.BOLD, 15));
+		user.setBounds(72, 78, 85, 14);
+		contentPane.add(user);
+
 		
 		password = new JPasswordField();
 		password.setFont(new Font("Masuk", Font.PLAIN, 14));
 		password.setBounds(167, 125, 170, 32);
 		contentPane.add(password);
 		
+
+
 		user = new JLabel("Username");
 		user.setForeground(Color.BLACK);
 		user.setFont(new Font("login", Font.BOLD, 15));
 		user.setBounds(72, 78, 85, 14);
 		contentPane.add(user);
+
+
 		
 		pass = new JLabel("Password");
 		pass.setForeground(Color.BLACK);
@@ -68,7 +82,9 @@ public class login extends JFrame implements ActionListener{
 		contentPane.add(pass);
 		
 		JButton btnBatal = new JButton("BATAL");
+
 		btnBatal.setBackground(Color.ORANGE);
+
 		btnBatal.setFont(new Font("Tahoma", Font.PLAIN, 13));
 		btnBatal.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
@@ -86,13 +102,17 @@ public class login extends JFrame implements ActionListener{
 		contentPane.add(lblPemesananTiketKereta);
 		
 		btnMasuk = new JButton("MASUK");
+
 		btnMasuk.setBackground(Color.ORANGE);
+
 		btnMasuk.setFont(new Font("Masuk", Font.PLAIN, 13));
 		btnMasuk.setBounds(108, 177, 105, 23);
 		contentPane.add(btnMasuk);
 		
 		label = new JLabel("");
+
 		label.setBackground(Color.white);
+
 		label.setBounds(333, 0, 101, 67);
 		contentPane.add(label);
 		

@@ -15,7 +15,9 @@ public class welcome extends JFrame {
 
 	public welcome() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
 		setBounds(100, 100, 490, 355);
+
 		contentPane = new JPanel();
 		contentPane.setBackground(SystemColor.text);
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
@@ -31,11 +33,13 @@ public class welcome extends JFrame {
 			}
 		});
 		btnKasir.setFont(new Font("Calibri", Font.PLAIN, 22));
+
 		btnKasir.setBounds(40, 50, 150, 25);
 		contentPane.add(btnKasir);
 
 		JButton btnAdmin = new JButton("ADMIN");
 		btnAdmin.setBackground(Color.ORANGE);
+
 		btnAdmin.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				dispose();
@@ -43,12 +47,14 @@ public class welcome extends JFrame {
 			}
 		});
 		btnAdmin.setFont(new Font("Calibri", Font.PLAIN, 22));
+
 		btnAdmin.setBounds(250, 50, 180, 25);
 		contentPane.add(btnAdmin);
 
 		JLabel lblNewLabel = new JLabel("");
 		lblNewLabel.setIcon(new ImageIcon("images/1.jpg"));
 		lblNewLabel.setBounds(0, 0, 600, 316);
+
 		contentPane.add(lblNewLabel);
 
 		JPanel panel = new JPanel();
